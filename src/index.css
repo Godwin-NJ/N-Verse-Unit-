@@ -3,3 +3,46 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+  color: rgb(10, 10, 10);
+}
+
+nav {
+  width: 25%;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-toggle {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  padding: 1rem;
+}
+
+.links-container {
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.list a {
+  display: block;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+}
+.list a:hover {
+  color: hsl(205, 78%, 60%);
+  background-color: hsl(205, 86%, 81%);
+}
