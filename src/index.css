@@ -8,11 +8,59 @@ a {
   text-decoration: none;
   color: rgb(10, 10, 10);
 }
+/* 
+.home-landing {
+  
+} */
 
-nav {
-  width: 25%;
+.bar-toggle {
+  background: transparent;
+  border-color: transparent;
+  position: fixed;
+  top: 2rem;
+  left: 3rem;
+  color: rgb(115, 115, 243);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  animation: bounce 5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bar-toggle:hover {
+  color: rgb(15, 12, 12);
+}
+
+.home-body {
+  padding: 2rem 0rem 0rem 8rem;
+  display: inline-block;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 35vw;
   background: #fff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+  transform: translate(-100%);
+}
+
+.show-sidebar {
+  transform: translate(0);
 }
 
 .nav-toggle {
@@ -20,6 +68,7 @@ nav {
   background: transparent;
   border-color: transparent;
   cursor: pointer;
+  color: rgb(236, 78, 78);
 }
 
 .nav-header {
@@ -29,11 +78,6 @@ nav {
   padding: 1rem;
 }
 
-.links-container {
-  height: 0px;
-  overflow: hidden;
-  transition: all 0.5s ease;
-}
 .list a {
   display: block;
   letter-spacing: 0.1rem;
