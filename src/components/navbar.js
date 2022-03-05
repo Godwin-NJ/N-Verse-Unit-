@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useGlobalContext } from "../context";
 import { SiHackaday } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const { closeSideBar, isSidebarOpen } = useGlobalContext();
@@ -17,13 +18,13 @@ const Navbar = () => {
         <div>
           <ul className="list">
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/">Staff</a>
+              <Link to="/staff">StLinkff</Link>
             </li>
             <li>
-              <a href="/">About</a>
+              <Link to="/about">About</Link>
             </li>
           </ul>
         </div>
