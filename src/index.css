@@ -17,8 +17,8 @@ a {
   background: transparent;
   border-color: transparent;
   position: fixed;
-  top: 2rem;
-  left: 3rem;
+  top: 1rem;
+  left: 2rem;
   color: rgb(115, 115, 243);
   font-size: 2rem;
   cursor: pointer;
@@ -91,4 +91,79 @@ a {
 .list li:hover {
   color: hsl(205, 78%, 60%);
   background-color: hsl(205, 86%, 81%);
+}
+
+/* employee sction  */
+.employee-section {
+  padding-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* border: 1px solid black; */
+  gap: 5px;
+  /* padding-left: 5px; */
+}
+.employee {
+  display: column;
+  text-transform: capitalize;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 50%;
+  margin: 0px auto;
+  padding: 20px;
+  line-height: 1.5rem;
+}
+
+.detailsColor {
+  border: 0px solid black;
+  border-radius: 5px;
+  background-color: #a7a7cd;
+  color: #fffbfb;
+  padding: 5px;
+  margin-top: 5px;
+}
+.employee-to-home {
+  margin-top: 5rem;
+  margin-left: 7rem;
+  border: 0px solid black;
+  width: 12%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #a7a7cd;
+  color: #fffbfb;
+}
+
+/* single employee  */
+.singleEmployee {
+  padding-top: 5rem;
+  padding-left: 3rem;
+}
+
+.singleLinkRoute {
+  display: flex;
+  gap: 10px;
+}
+.singleLink {
+  border: 0px solid black;
+  border-radius: 5px;
+  background-color: #a7a7cd;
+  color: #fffbfb;
+  /* padding-left: 10rem; */
+  padding: 5px;
+  width: 5rem;
+  text-transform: uppercase;
+}
+.singleLink:hover {
+  background-color: orange;
+  color: black;
+}
+
+.singleStaffInfo {
+  padding-top: 2rem;
+  text-transform: capitalize;
+  font-weight: 100;
+  font-size: large;
+  line-height: 2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* color: rgb(51, 68, 66); */
 }

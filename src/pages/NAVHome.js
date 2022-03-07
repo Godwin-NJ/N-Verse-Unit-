@@ -10,9 +10,7 @@ const Home = () => {
         <button className="bar-toggle" onClick={openSideBar}>
           <AiOutlineAlignLeft />
         </button>
-        <div className="home-body">
-          <h2>home body</h2>
-        </div>
+        {/* <div className="home-body"><h2>home body</h2></div> */}
       </section>
     </Fragment>
   );

@@ -1,7 +1,12 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Employee from "../components/Employee";
 
 const StaffInfo = () => {
-  return <div>StaffInfo</div>;
+  return (
+    <Fragment>
+      <Employee />
+    </Fragment>
+  );
 };
 
 export default StaffInfo;
