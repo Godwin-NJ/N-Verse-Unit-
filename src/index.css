@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  min-height: 100vh;
+}
 
 a {
   text-decoration: none;
@@ -93,6 +96,12 @@ a {
   background-color: hsl(205, 86%, 81%);
 }
 
+/* HOME PAGE */
+
+.main-home {
+  margin-top: 5rem;
+}
+
 /* employee sction  */
 .employee-section {
   padding-top: 1.5rem;
@@ -123,7 +132,7 @@ a {
 }
 .employee-to-home {
   margin-top: 5rem;
-  margin-left: 7rem;
+  margin-left: 2rem;
   border: 0px solid black;
   width: 12%;
   padding: 10px;
@@ -166,4 +175,38 @@ a {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   /* color: rgb(51, 68, 66); */
+}
+
+/* NOT CLEAR WITH THIS  */
+.loader {
+  height: 40vh;
+  animation: rotate 3s linear infinite;
+  margin-left: 10rem;
+  /* padding-top: 3rem; */
+  /* border: 1px solid black; */
+  position: fixed;
+  top: 20%;
+  width: 40%;
+  /* height: 50%; */
+  padding-top: 20%;
+}
+.circle {
+  background-color: purple;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  /* position: absolute; */
+  /* border: 1px solid black; */
+  margin: 0px auto;
+  /* margin-top: 50px;*/
+}
+
+.circle:nth-child(2) {
+  background-color: palevioletred;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
 }
